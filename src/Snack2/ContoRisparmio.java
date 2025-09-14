@@ -20,7 +20,7 @@ public class ContoRisparmio extends ContoBancario {
     }
 
     public void interessi() {
-        deposita(getSaldo() * tassoInteresse);
+        deposita(getSaldo() / 100 * tassoInteresse);
     }
 
 

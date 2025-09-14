@@ -11,8 +11,8 @@ public class ContoBancario{
     }
     
     public void preleva(int importo) {
-        if (saldo <= importo){
-            saldo -= importo;
+        if (saldo >= importo){
+            saldo += importo;
         } else {
             System.out.println("Non è possibile prelevare per fondi insufficenti");
         }
